@@ -1,0 +1,53 @@
+{
+  "name": "e-commerce-homepage",
+  "version": "1.0.0",
+  "description": "Coding Challenge",
+  "main": "index.js",
+  "repository": "https://github.com/yadab-sd/e-commerce-homepage.git",
+  "author": "Yadab Sd",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "json-server db.json --port 5000",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^25.2.3",
+    "@types/jquery": "^3.5.0",
+    "@types/node": "^14.0.11",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "bootstrap": "^4.5.0",
+    "concurrently": "^5.2.0",
+    "jquery": "^3.5.1",
+    "json-server": "^0.16.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "sass": "^1.26.7",
+    "typescript": "^3.9.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

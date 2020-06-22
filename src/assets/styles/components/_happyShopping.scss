@@ -1,0 +1,26 @@
+.happy-shopping {
+    &-inner {
+    	.feature-item {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: flex-start;
+		    justify-content: space-between;
+		    cursor: pointer;
+		    background: #fff;
+		    position: relative;
+		    &-icon {
+		    	width: 35px;
+		    	height: 35px;
+		    }
+		    &-link {
+		    	margin-left: auto;
+		    	display: block;
+		    	&-icon {
+			    	max-width: 20px;
+			    	max-height: 20px;
+		    	}
+		    }
+		}
+    }
+
+}

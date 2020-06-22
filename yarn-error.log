@@ -1,0 +1,86 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\Yadab\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Yadab\bin;C:\Program Files (x86)\NetSarang\Xshell 6;C:\Program Files (x86)\NetSarang\Xftp 6;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\lien;C:\ProgramData\chocolatey\bin;C:\Program Files\OpenJDK\jdk-12.0.1\bin;C:\Windows\System32;C:\Program Files (x86)\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin;C:\Program Files\Git\cmd;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Ruby26-x64\bin;C:\Users\Yadab\AppData\Roaming\Composer\vendor\bin;C:\Users\Yadab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Yadab\Anaconda3\Library;C:\Users\Yadab\Anaconda3\Library\mingw-w64;C:\Program Files\Tesseract-OCR;C:\Program Files\Tesseract-OCR\tessdata;C:\Windows\System32;C:\Users\Yadab\AppData\Local\GitHubDesktop\bin;C:\xampp\php;C:\Python27amd64;C:\Python27amd64\Scripts;C:\Program Files\nodejs;C:\Users\Yadab\AppData\Roaming\npm;C:\Users\Yadab\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/date-fns/-/date-fns-2.14.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141375:19)
+      at Object.onceWrapper (events.js:417:28)
+      at ClientRequest.emit (events.js:311:20)
+      at TLSSocket.emitRequestTimeout (_http_client.js:714:9)
+      at Object.onceWrapper (events.js:417:28)
+      at TLSSocket.emit (events.js:311:20)
+      at TLSSocket.Socket._onTimeout (net.js:478:8)
+      at listOnTimeout (internal/timers.js:549:17)
+      at processTimers (internal/timers.js:492:7)
+
+npm manifest: 
+  {
+    "name": "e-commerce-homepage",
+    "version": "1.0.0",
+    "description": "Coding Challenge",
+    "main": "index.js",
+    "repository": "https://github.com/yadab-sd/e-commerce-homepage.git",
+    "author": "Yadab Sd",
+    "license": "MIT",
+    "scripts": {
+      "start": "concurrently \"react-scripts start\" \"npm run server\"",
+      "server": "json-server db.json --port 5000",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+    },
+    "dependencies": {
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/react": "^9.3.2",
+      "@testing-library/user-event": "^7.1.2",
+      "@types/jest": "^25.2.3",
+      "@types/node": "^14.0.11",
+      "@types/react": "^16.9.35",
+      "@types/react-dom": "^16.9.8",
+      "@types/react-router-dom": "^5.1.5",
+      "bootstrap": "^4.5.0",
+      "concurrently": "^5.2.0",
+      "json-server": "^0.16.1",
+      "react": "^16.13.1",
+      "react-bootstrap": "^1.0.1",
+      "react-dom": "^16.13.1",
+      "react-router-dom": "^5.2.0",
+      "react-scripts": "3.4.1",
+      "sass": "^1.26.7",
+      "typescript": "^3.9.5"
+    },
+    "proxy": "http://localhost:5000",
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "dotenv": "^8.2.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,21 @@
+// External
+@import "~bootstrap/scss/bootstrap";
+
+// Intruments
+@import './default/variables';
+@import './default/crossBrowser';
+@import './default/base';
+@import './default/responsive';
+
+// Layout 
+@import './components/header';
+@import './components/footer';
+
+// Others Components
+@import './components/banner';
+@import './components/popularCategories';
+@import './components/happyShopping';
+@import './components/hotDeals';
+
+// Pages
+@import './pages/home';

@@ -1,0 +1,268 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*:focus, *:active {
+	outline: none !important;
+}
+body {
+	color: $secondary-font-color;
+	font-size: 16px;
+	font-family: $text-font-stack;
+	font-weight: 400;
+}
+
+select, input, button {
+	outline: none;
+	border: none;
+	background-color: transparent;
+	@include cross('appearance', none)
+}
+
+h2 {
+	color: $primary-font-color;
+	margin: 0;
+	padding: 0;
+}
+
+h3 {
+	color: $primary-font-color;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	color: $primary-font-color;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: $primary-font-color;
+	transition: all .3s;
+
+	&:hover {
+		text-decoration: none;
+		color: $accent;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+
+::placeholder {
+  color: $grey;
+  opacity: 1;
+  font-weight: lighter;
+}
+
+:-webkit-input-placeholder {
+  color: $grey;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+ color: $grey;
+}
+
+.g-bg {
+	background: linear-gradient(125deg, $accent, $accent2);
+	color: #fff;
+}
+
+.box-shadow {
+	box-shadow: 0px 0px 5px $grey;
+}
+
+.color-shadow {
+	box-shadow: 0px 1px 2px $accent;
+}
+
+.main {
+	background-color: $body-color;
+	min-height: 100vh;
+}
+
+.content {
+}
+
+.heading {
+	color: $primary-font-color;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	margin-bottom: 5px;
+	font-weight: 500;
+	a {
+		text-decoration: none;
+	}
+}
+
+.sub-heading {
+	color: $primary-font-color;
+	font-size: 1rem;
+	a {
+		text-decoration: none;
+	}
+}
+
+.title {
+	color: $primary-font-color;
+	font-size: 1.1rem;
+	font-weight: 500;
+	a {
+		text-decoration: none;
+	}
+}
+
+.sub-title {
+	color: $primary-font-color;
+	font-size: .8rem;
+	a {
+		text-decoration: none;
+	}
+} 
+
+.upper {
+	text-transform: uppercase;
+}
+
+.center {
+	text-align: center;
+}
+
+.highlighted-txt {
+	color: $accent;
+}
+
+.sp-button {
+	background-color: $accent;
+	border: 1px solid $accent;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 8px 18px;
+	display: inline-block;
+	transition: all .3s;
+
+	&:hover {
+		background-color: #fff;
+		color: $accent;
+	}
+}
+
+@for $i from 50 through 0 {
+	.p-#{$i} { padding: #{$i}px !important;}
+	.py-#{$i} { padding-top: #{$i}px !important; padding-bottom: #{$i}px !important;}
+	.px-#{$i} { padding-left: #{$i}px !important; padding-right: #{$i}px !important;}
+	.pr-#{$i} { padding-right: #{$i}px !important;}
+	.pl-#{$i} { padding-left: #{$i}px !important;}
+	.pt-#{$i} { padding-top: #{$i}px !important;}
+	.pb-#{$i} { padding-bottom: #{$i}px !important;}
+
+	.m-#{$i} { margin: #{$i}px !important;}
+	.my-#{$i} { margin-top: #{$i}px !important; margin-bottom: #{$i}px !important;}
+	.mx-#{$i} { margin-left: #{$i}px !important; margin-right: #{$i}px !important;}
+	.mr-#{$i} { margin-right: #{$i}px !important;}
+	.ml-#{$i} { margin-left: #{$i}px !important;}
+	.mt-#{$i} { margin-top: #{$i}px !important;}
+	.mb-#{$i} { margin-bottom: #{$i}px !important;}
+}
+
+.menu-item {
+	padding: 0px 10px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	cursor: pointer;
+
+	&-text {
+		font-weight: bold;
+		display: inline-block;
+	}
+	&-icon {
+		vertical-align: middle;
+		width: 16px;
+	}
+}
+
+.d-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.d-flex-sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-block {
+	display: block !important;
+}
+
+.visible {
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+.hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.radius-7 {
+	border-radius: 7px;
+}
+
+.radius-5 {
+	border-radius: 5px;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.grey {
+	color: $secondary-font-color;
+}
+
+.arrow-below-icon {
+	vertical-align: middle;
+}
+
+.arrow-l {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 50% 0 50% 50%;
+  padding: 5px;
+}
+.arrow-r {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 0 50% 50% 50%;
+  padding: 5px;
+}
+
+.disabled {
+	background-color: $grey !important;
+}

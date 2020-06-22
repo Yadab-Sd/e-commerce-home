@@ -1,0 +1,103 @@
+.popular-categories {
+  &-carousal {
+    position: relative;
+    .pattern-tr {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+    .pattern-bl {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      transform: translateY(50%);
+      z-index: 1;
+    }
+    &-inner {
+      position: relative;
+      background: #fff;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      &-fixed {
+        background: #fff;
+        min-width: 100px;
+        min-height: 100px;
+      }
+      &-move {
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        position: relative;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        &-ribbon {
+          flex: 0 0 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          max-height: 100px;
+          transition: all .5s;
+          transform : translateX(0px);
+          .category-item {
+            width: 100px;
+            float: left;
+          }
+        }
+      }
+    }
+  }
+
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &-img {
+      padding: 10px;
+    }
+    &-txt {
+      text-align: center;
+    }
+  }
+
+  .category-search {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -20px;
+    z-index: 101;
+    &-input {
+      align-self: stretch;
+      padding: 10px;
+      min-width: 280px;
+      @include respond-to('small') {
+        min-width: auto;
+      }
+    }
+    &-icon {
+      text-align: center;
+      align-self: stretch;
+      padding: 8px;
+    }
+  }
+
+  .view-more-category {
+    text-align: right;
+    @include respond-to('small') {
+        padding-top: 10px;
+    }
+  }
+}
